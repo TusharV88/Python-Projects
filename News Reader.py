@@ -14,7 +14,7 @@ def reader(str):
 
 if __name__ == "__main__":
     reader('Today News are')
-    url = 'http://newsapi.org/v2/top-headlines?country=in&apiKey=c111033eb454441284fd42511f07166c'
+    url = 'http://newsapi.org/v2/top-headlines?country=in&apiKey=Paste Your Api Key Here'
     res = requests.get(url).text
 
     news = json.loads(res)
