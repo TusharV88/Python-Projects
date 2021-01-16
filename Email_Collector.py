@@ -1,5 +1,10 @@
 # Email Collector by using Regular Expression.
 
+'''
+Author : Tushar Verma
+Date : 23-Dec-2020
+'''
+
 import re
 
 string = 'Emails : gen.e.rat.o.r+mildhede@gmail.com,gen.e.ra.tor+hoankan@gmail.com,gen.e.ra.to.r+cembali@gmail.com,gen.e.ra.t.or+anticrack@gmail.com,ge.ne.rat.or+beginjaren@gmail.com'
