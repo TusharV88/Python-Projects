@@ -1,5 +1,10 @@
 # Fake Multiplier Checker
 
+'''
+Aurthor : Tushar verma
+Date : 05-Jan-21
+'''
+
 import random as rn
 
 
