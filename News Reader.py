@@ -1,5 +1,10 @@
 # Automate News Reader.
  
+ '''
+Author : Tushar Verma
+Date : 20-Dec-2020
+ '''
+ 
 import requests
 import json
 
