@@ -1,7 +1,7 @@
 # Simple Snake Game
 '''
 Aurthor : Tushar Verma
-Date : 27-Dec-2021
+Date : 27-Dec-2020
 '''
 
 import pygame
