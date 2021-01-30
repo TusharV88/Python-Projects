@@ -1,5 +1,8 @@
 # Flappy Bird Game
-
+'''
+Aurthor : Tushar Verma
+Date : 21-Jan-2021
+'''
 import random  # For generating random numbers
 import sys  # We will use sys.exit to exit the program
 import pygame
@@ -13,17 +16,17 @@ SCREEN = pygame.display.set_mode((SCREENWIDTH, SCREENHEIGHT))
 GROUNDY = SCREENHEIGHT * 0.8
 GAME_SPRITES = {}
 GAME_SOUNDS = {}
-PLAYER = r"C:\Users\Tushar\Desktop\All in One Python\FlappyBird\gallery\sprites\bird8.png"
-BACKGROUND = r"C:\Users\Tushar\Desktop\All in One Python\FlappyBird\gallery\sprites\bg5.jpg"
-PIPE = r"C:\Users\Tushar\Desktop\All in One Python\FlappyBird\gallery\sprites\pipe.png"
+PLAYER = r"FlappyBird\gallery\sprites\bird8.png"
+BACKGROUND = r"FlappyBird\gallery\sprites\bg5.jpg"
+PIPE = r"FlappyBird\gallery\sprites\pipe.png"
 
 
-BackgroundGameMusic = [r"C:\Users\Tushar\Desktop\All in One Python\FlappyBird\Game Music\GameMusic1.mp3",r"C:\Users\Tushar\Desktop\All in One Python\FlappyBird\Game Music\GameMusic2.mp3",r"C:\Users\Tushar\Desktop\All in One Python\FlappyBird\Game Music\GameMusic3.mp3",r"C:\Users\Tushar\Desktop\All in One Python\FlappyBird\Game Music\GameMusic4.mp3",r"C:\Users\Tushar\Desktop\All in One Python\FlappyBird\Game Music\GameMusic5.mp3",r"C:\Users\Tushar\Desktop\All in One Python\FlappyBird\Game Music\GameMusic6.mp3",r"C:\Users\Tushar\Desktop\All in One Python\FlappyBird\Game Music\GameMusic7.mp3",r"C:\Users\Tushar\Desktop\All in One Python\FlappyBird\Game Music\GameMusic8.mp3",r"C:\Users\Tushar\Desktop\All in One Python\FlappyBird\Game Music\GameMusic9.mp3",r"C:\Users\Tushar\Desktop\All in One Python\FlappyBird\Game Music\GameMusic10.mp3",r"C:\Users\Tushar\Desktop\All in One Python\FlappyBird\Game Music\GameMusic11.mp3"]
+BackgroundGameMusic = [r"FlappyBird\Game Music\GameMusic1.mp3",r"FlappyBird\Game Music\GameMusic2.mp3",r"FlappyBird\Game Music\GameMusic3.mp3",r"FlappyBird\Game Music\GameMusic4.mp3",r"FlappyBird\Game Music\GameMusic5.mp3",r"FlappyBird\Game Music\GameMusic6.mp3",r"FlappyBird\Game Music\GameMusic7.mp3",r"FlappyBird\Game Music\GameMusic8.mp3",r"FlappyBird\Game Music\GameMusic9.mp3",r"FlappyBird\Game Music\GameMusic10.mp3",r"FlappyBird\Game Music\GameMusic11.mp3"]
 
-IntroMusic = ['C:/Users/Tushar/Desktop/All in One Python/FlappyBird/Game Music/IntroMusic.mp3']
+IntroMusic = ['FlappyBird/Game Music/IntroMusic.mp3']
 
 
-BACKGROUND1 = r"C:\Users\Tushar\Desktop\All in One Python\FlappyBird\gallery\sprites\welcome.jpg"
+BACKGROUND1 = r"FlappyBird\gallery\sprites\welcome.jpg"
 
 
 def welcomeScreen():
@@ -207,46 +210,46 @@ if __name__ == "__main__":
     #pygame.display.set_icon(pygame.image.load(r"C:\Users\Tushar\Desktop\All in One Python\FlappyBird\gallery\sprites\bird.png"))
     GAME_SPRITES['numbers'] = (
         pygame.image.load(
-            r"C:\Users\Tushar\Desktop\All in One Python\FlappyBird\gallery\sprites\Final0.png").convert_alpha(),
+            r"FlappyBird\gallery\sprites\Final0.png").convert_alpha(),
         pygame.image.load(
-            r"C:\Users\Tushar\Desktop\All in One Python\FlappyBird\gallery\sprites\Final1.png").convert_alpha(),
+            r"FlappyBird\gallery\sprites\Final1.png").convert_alpha(),
         pygame.image.load(
-            r"C:\Users\Tushar\Desktop\All in One Python\FlappyBird\gallery\sprites\Final2.png").convert_alpha(),
+            r"FlappyBird\gallery\sprites\Final2.png").convert_alpha(),
         pygame.image.load(
-            r"C:\Users\Tushar\Desktop\All in One Python\FlappyBird\gallery\sprites\Final3.png").convert_alpha(),
+            r"FlappyBird\gallery\sprites\Final3.png").convert_alpha(),
         pygame.image.load(
-            r"C:\Users\Tushar\Desktop\All in One Python\FlappyBird\gallery\sprites\Final4.png").convert_alpha(),
+            r"FlappyBird\gallery\sprites\Final4.png").convert_alpha(),
         pygame.image.load(
-            r"C:\Users\Tushar\Desktop\All in One Python\FlappyBird\gallery\sprites\Final5.png").convert_alpha(),
+            r"FlappyBird\gallery\sprites\Final5.png").convert_alpha(),
         pygame.image.load(
-            r"C:\Users\Tushar\Desktop\All in One Python\FlappyBird\gallery\sprites\Final6.png").convert_alpha(),
+            r"FlappyBird\gallery\sprites\Final6.png").convert_alpha(),
         pygame.image.load(
-            r"C:\Users\Tushar\Desktop\All in One Python\FlappyBird\gallery\sprites\Final7.png").convert_alpha(),
+            r"FlappyBird\gallery\sprites\Final7.png").convert_alpha(),
         pygame.image.load(
-            r"C:\Users\Tushar\Desktop\All in One Python\FlappyBird\gallery\sprites\Final8.png").convert_alpha(),
+            r"FlappyBird\gallery\sprites\Final8.png").convert_alpha(),
         pygame.image.load(
-            r"C:\Users\Tushar\Desktop\All in One Python\FlappyBird\gallery\sprites\Final9.png").convert_alpha(),
+            r"FlappyBird\gallery\sprites\Final9.png").convert_alpha(),
     )
 
     GAME_SPRITES['message'] = pygame.image.load(
-        r"C:\Users\Tushar\Desktop\All in One Python\FlappyBird\gallery\sprites\message5.png").convert_alpha()
+        r"FlappyBird\gallery\sprites\message5.png").convert_alpha()
     GAME_SPRITES['base'] = pygame.image.load(
-        r"C:\Users\Tushar\Desktop\All in One Python\FlappyBird\gallery\sprites\base.png").convert_alpha()
+        r"FlappyBird\gallery\sprites\base.png").convert_alpha()
     GAME_SPRITES['pipe'] = (pygame.transform.rotate(pygame.image.load(PIPE).convert_alpha(), 180),
                             pygame.image.load(PIPE).convert_alpha()
                             )
 
     # Game sounds
     GAME_SOUNDS['die'] = pygame.mixer.Sound(
-        r"C:\Users\Tushar\Desktop\All in One Python\FlappyBird\gallery\audio\die.wav")
+        r"FlappyBird\gallery\audio\die.wav")
     GAME_SOUNDS['hit'] = pygame.mixer.Sound(
-        r"C:\Users\Tushar\Desktop\All in One Python\FlappyBird\gallery\audio\hit.wav")
+        r"FlappyBird\gallery\audio\hit.wav")
     GAME_SOUNDS['point'] = pygame.mixer.Sound(
-        r"C:\Users\Tushar\Desktop\All in One Python\FlappyBird\gallery\audio\point.wav")
+        r"FlappyBird\gallery\audio\point.wav")
     GAME_SOUNDS['swoosh'] = pygame.mixer.Sound(
-        r"C:\Users\Tushar\Desktop\All in One Python\FlappyBird\gallery\audio\swoosh.wav")
+        r"FlappyBird\gallery\audio\swoosh.wav")
     GAME_SOUNDS['wing'] = pygame.mixer.Sound(
-        r"C:\Users\Tushar\Desktop\All in One Python\FlappyBird\gallery\audio\wing.wav")
+        r"FlappyBird\gallery\audio\wing.wav")
 
     GAME_SPRITES['background'] = pygame.image.load(BACKGROUND).convert()
     GAME_SPRITES['player'] = pygame.image.load(PLAYER).convert_alpha()
