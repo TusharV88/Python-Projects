@@ -1,3 +1,9 @@
+# Simple Snake Game
+'''
+Aurthor : Tushar Verma
+Date : 27-Dec-2021
+'''
+
 import pygame
 import time
 import random
