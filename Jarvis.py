@@ -85,7 +85,7 @@ def sendEmail(to, content):
 
 # This fucntion is used to get news 
 def news():
-    url = 'http://newsapi.org/v2/top-headlines?country=in&apiKey=c111033eb454441284fd42511f07166c'
+    url = 'http://newsapi.org/v2/top-headlines?country=in&apiKey= PASTE YOUR API HERE' # Get your api key from 'newsapi.org' and paste it
     res = requests.get(url).text
 
     rnews = json.loads(res)
@@ -220,7 +220,7 @@ if __name__ == "__main__":
                 speak("Email has been sent!")
             except Exception as e:
                 print(e)
-                speak("Sorry my friend harry bhai. I am not able to send this email")        
+                speak("Sorry my friend . I am not able to send this email")        
 
         elif 'quit' in query: # It will quit
             print('Thank you for your time! ')
